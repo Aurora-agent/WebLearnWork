@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+/* 春节主题配色 */
+.spring-theme {
+    theme-red: #c33;
+    theme-gold: #ffd700;
+}
+
+.spring-theme .info-card {
+    border: 2px solid var(--theme-gold);
+}
+
+.spring-theme blockquote {
+    color: var(--theme-red);
+    border-color: var(--theme-gold);
+}
+
+.spring-theme .nav-card {
+    background: linear-gradient(45deg, #fffaf0, #fff);
+}
+
+.spring-theme .custom-list li {
+    border-color: var(--theme-red);
+}
+
+/* 春节特有装饰 */
+.festival-title::after {
+    content: "❀";
+    color: var(--theme-red);
+    margin-left: 1rem;
+}
+
+.spring-theme .poem {
+    background: #fffaf0;
+    position: relative;
+    padding: 1.5rem 2rem;
+}
+
+.spring-theme .poem::before {
+    content: "福";
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    font-size: 3rem;
+    color: var(--theme-red);
+    opacity: 0.2;
+    transform: rotate(15deg);
+}

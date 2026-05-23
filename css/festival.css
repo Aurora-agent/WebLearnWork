@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+/* 节日页面样式 */
+.festival-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.festival-banner {
+    position: relative;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+}
+
+.festival-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    font-size: 2.5rem;
+}
+
+.festival-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.custom-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px dashed #eee;
+}
+
+blockquote {
+    font-size: 1.2rem;
+    color: #2e7d32;
+    border-left: 4px solid #d32f2f;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+}
+
+.poem {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-style: italic;
+}
+
+.festival-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.nav-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #2c3e50;
+    transition: transform 0.3s;
+    border: 1px solid #eee;
+}
+
+.nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .festival-banner {
+        height: 300px;
+    }
+    
+    .festival-title {
+        font-size: 2rem;
+    }
+}

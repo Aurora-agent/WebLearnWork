@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+/* 校区页面通用样式 */
+.campus-container {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.campus-header {
+    position: relative;
+    height: 400px;
+    margin-bottom: 4rem;
+}
+
+.campus-gate {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(0.9);
+}
+
+.campus-header h1 {
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    font-size: 2.5rem;
+}
+
+/* 江安主题 */
+.jiang-an-theme {
+    theme-color: #2e86c1;
+    secondary-color: #27ae60;
+}
+
+.jiang-an-theme .cultural-tags span {
+    background: linear-gradient(45deg, var(--theme-color), var(--secondary-color));
+}
+
+/* 望江主题 */
+.wangjiang-theme {
+    theme-color: #d35400;
+    secondary-color: #7d3c98;
+}
+
+.wangjiang-theme blockquote {
+    border-left: 4px solid var(--theme-color);
+}
+
+/* 文化地标布局 */
+.cultural-landmarks {
+    display: grid;
+    gap: 3rem;
+}
+
+.landmark-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.landmark-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* 时间轴设计 */
+.cultural-timeline {
+    position: relative;
+    padding-left: 200px;
+}
+
+.timeline-item {
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: start;
+    gap: 2rem;
+}
+
+.timeline-img {
+    width: 100%;
+    height: 280px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+    .landmark-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .cultural-timeline {
+        padding-left: 0;
+    }
+}

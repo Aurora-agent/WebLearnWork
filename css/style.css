@@ -1,0 +1,237 @@
+
+.featured-section {
+    margin: 2rem 0;
+}
+
+.featured-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.feature-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
+    color: white;
+    padding: 2rem;
+    width: 100%;
+}
+
+.grid-layout {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* 个人介绍页样式 */
+.profile-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.avatar-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
+    border: 3px solid #2c3e50;
+}
+
+.avatar-info h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.profile-details {
+    display: grid;
+    gap: 2rem;
+}
+
+.info-block {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.skill-list {
+    columns: 2;
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 头部样式 */
+.site-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.slogan {
+    font-style: italic;
+    color: #bdc3c7;
+}
+
+/* 导航栏 */
+.main-nav {
+    background-color: #ecf0f1;
+    border-bottom: 2px solid #bdc3c7;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.nav-list li {
+    margin: 0 1.5rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #e74c3c;
+}
+
+/* 主内容区 */
+.main-content {
+    padding: 2rem 0;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.page-content {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* 文章卡片 */
+.post-card {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 侧边栏组件 */
+.widget {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.avatar {
+    width: 100%;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+
+/* 页脚 */
+.site-footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .nav-list li {
+        margin: 0.5rem;
+    }
+}
+
+/* 节日寄语页面特殊样式 */
+.festival-page {
+    background: #f7faf3;
+}
+
+.dragon-boat-theme {
+    color: #2e7d32;
+    border-left: 4px solid #d32f2f;
+    padding-left: 1rem;
+}
+document.querySelectorAll('.progress-circle').forEach(circle => {
+    const percent = circle.dataset.percent;
+    circle.style.setProperty('--percent', percent);
+});
+/* 原有样式保持不变... */

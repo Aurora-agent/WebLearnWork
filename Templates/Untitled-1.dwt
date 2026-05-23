@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TemplateBeginEditable name="EditRegion3" -->
+    <title>学生博客 - 首页</title>
+<!-- TemplateEndEditable -->
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+	<!-- TemplateBeginEditable name="EditRegion2" --> <!-- TemplateEndEditable -->
+</head>
+<body>
+    
+    <!-- 头部（固定区域，全站统一） -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">我的成长笔记</h1>
+            <p class="slogan">记录学习点滴，分享生活感悟</p>
+        </div>
+</header>
+
+    <!-- 导航栏（固定区域，全站统一） -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="introduction.html">关于我</a></li>
+                <li><a href="hobby.html">兴趣爱好</a></li>
+                <li><a href="university.html">我的大学</a></li>
+                <li><a href="festival.html">节日寄语</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主内容区（各页面不同） -->
+<main class="container main-content">
+    </main>
+    <!-- TemplateBeginEditable name="EditRegion1" -->
+    
+    <!-- TemplateEndEditable -->
+    <!-- 页脚（固定区域，全站统一） -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 学生博客 · 保留所有权利</p>
+            <p>端午安康 · 粽香传情</p>
+        </div>
+</footer>
+</body>
+</html>

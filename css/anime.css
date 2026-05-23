@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+/* 动漫页面样式 */
+.anime-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.anime-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.anime-header {
+    position: relative;
+    height: 400px;
+}
+
+.anime-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+}
+
+.title-box {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.title-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.genre-tags span {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 0.3rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.anime-content {
+    padding: 2rem;
+}
+
+.quote {
+    font-size: 1.2rem;
+    color: #666;
+    border-left: 4px solid;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.detail-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+/* 主题配色 */
+.gintama-theme {
+    --theme-color: #E53E3E;
+}
+.gintama-theme .quote {
+    border-color: var(--theme-color);
+}
+
+.violet-theme {
+    --theme-color: #4C51BF;
+}
+.violet-theme .quote {
+    border-color: var(--theme-color);
+}
+
+/* 图片占位提示 */
+.anime-cover[src$=".jpg"] {
+    position: relative;
+}
+.anime-cover[src$=".jpg"]::after {
+    content: "图片待添加";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #666;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .anime-header {
+        height: 300px;
+    }
+    
+    .title-box h2 {
+        font-size: 1.8rem;
+    }
+    
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+}

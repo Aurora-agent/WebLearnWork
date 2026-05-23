@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+/* 中秋主题配色 */
+.moon-theme {
+    --theme-blue: #2a5696;
+    --theme-gold: #f4c542;
+}
+
+.moon-theme .info-card {
+    border: 2px solid var(--theme-gold);
+    background: linear-gradient(to bottom right, #f8f9fa, #ffffff);
+}
+
+.moon-theme blockquote {
+    color: var(--theme-blue);
+    border-color: var(--theme-gold);
+}
+
+.moon-theme .custom-list li {
+    border-color: rgba(42,86,150,0.2);
+}
+
+/* 中秋特有装饰 */
+.festival-title::after {
+    content: "🌕";
+    margin-left: 1rem;
+    filter: drop-shadow(0 0 8px rgba(244,197,66,0.5));
+}
+
+.moon-theme .poem {
+    background: #f8fbff;
+    position: relative;
+    padding: 1.5rem 2rem;
+}
+
+.moon-theme .poem::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 60px;
+    height: 60px;
+    background: url(images/moon-icon.png) no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+}

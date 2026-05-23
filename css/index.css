@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+/* 首屏主图区 */
+.hero-section {
+    position: relative;
+    height: 70vh;
+    max-height: 800px;
+    margin-bottom: 4rem;
+    overflow: hidden; /* 新增 */
+}
+
+.hero-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* 图片层级 */
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%; /* 聚焦门体区域 */
+    filter: brightness(0.85) contrast(1.1);
+}
+
+.hero-content {
+    position: relative; /* 改为相对定位 */
+    z-index: 2; /* 文字层级高于图片 */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* 确保文字在安全区域 */
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* 核心内容区 */
+.essence-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    
+    gap: 3rem;
+}
+
+.essence-card {
+    text-align: center;
+    padding: 2.5rem;
+    background: rgba(255,255,255,0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.essence-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-text {
+    color: #666;
+    line-height: 1.8;
+    margin: 1rem 0;
+}
+
+.update-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.festival-link,
+.profile-link {
+    display: block;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.festival-link {
+    background: #f8f9fa;
+    color: #2c3e50;
+}
+
+.profile-link {
+    background: #2c3e50;
+    color: white;
+}
+
+/* 波浪分隔线 */
+.divider-wave {
+    margin: 5rem 0;
+    height: 100px;
+    overflow: hidden;
+}
+
+.divider-wave svg {
+    width: 100%;
+    height: 100%;
+    fill: #2c3e50;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .essence-grid {
+        
+        padding: 0 1rem;
+    }
+    
+    .essence-card {
+        padding: 2rem;
+    }
+}
